@@ -27,7 +27,7 @@ const styles = {
     regularText: 'text-white text-base  md:text-l lg:text-[20px]',
     smallText: 'text-white text-base md:text-xs lg:text-sm',
     smallTextTitle: 'text-white text-base md:text-xs lg:text-base',
-
+    icons: 'shadow-2xl ',
     horizontalRuleRight: 'ml-[30px] h-0.5 mt-2.5 w-full bg-white border-0',
 
   };
@@ -37,7 +37,7 @@ export const stylesHome = {
 
   
   aboutButtons: 'rounded-full bg-teal-400 text-white py-2 px-4 md:py-2 md:px-4 text-base md:text-[20px]',
-  profileImg: 'md:absolute h-[12em] w-[12em] sm:h-[15em] sm:w-[15em] md:w-[20em] md:h-[20em]  lg:w-[25em] lg:h-[25em] shadow-2xl rounded-full border-2'
+  profileImg: 'h-[12em] w-[12em] sm:h-[15em] sm:w-[15em] md:w-[20em] md:h-[20em]  lg:w-[25em] lg:h-[25em] shadow-2xl rounded-full border-2 object-cover'
 
 }
 

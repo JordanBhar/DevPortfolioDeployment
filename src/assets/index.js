@@ -2,7 +2,7 @@ import logo from "./Logo.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import linkedin from "./linkedin.svg";
-import profile from "./pfp.jpg"
+import profile from "./profile.png"
 import discord from "./discord.svg"
 import school from "./school.svg"
 import location from "./location.svg"

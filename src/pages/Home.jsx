@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../style";
 import { stylesHome } from "../style";
-import { profile, resume } from "../assets";
+import { profile } from "../assets";
 import { contactData, aboutData } from "../constants";
 
 const Home = () => {

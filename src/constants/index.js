@@ -1,4 +1,4 @@
-import {  linkedin, school, whatsapp, location, discord  } from "../assets";
+import {  linkedin, school, location, discord, mail  } from "../assets";
 
 
 export const navLinks = [
@@ -40,23 +40,23 @@ export const aboutData = [
 export const tabViewsSkillsEducation = [
     {
       id: 1,
-      title: "Front-end",
-      skills: ["HTML", "CSS", "BootStrap CSS", "Tailwind CSS" ,"JavaScript" ,"React", "Swift UI", "JSON", "XML"],
+      title: "Programming",
+      skills: ["C & C++", "C#", "Swift" ,"Kotlin", "Java", "Python", "Dart & Flutter"],
     },
     {
       id: 2,
-      title: "Back-end",
-      skills: [".NET", "SpringBoot"],
+      title: "Front-end",
+      skills: ["HTML", "CSS", "BootStrap CSS", "Tailwind CSS","React JS", "Swift UI"],
     },
     {
       id: 3,
-      title: "Database",
-      skills: ["Firebase", "SQL", "SQL lite"],
+      title: "Back-end",
+      skills: [".NET", "SpringBoot", "Node JS"],
     },
     {
       id: 4,
-      title: "Programming",
-      skills: ["C & C++", "C#", "Swift" ,"Kotlin", "Java", "Python", "Dart & Flutter"],
+      title: "Database",
+      skills: ["Firebase", "SQL", "SQL lite"],
     },
     {
       id: 5,
@@ -79,21 +79,25 @@ export const contactData = [
     icon: location,
   },
   {
-    id: 1,
+    id: 2,
     data: "Sheridan College" ,
     icon: school,
   },
   {
-    id: 1,
-    data: "SampleUsername" ,
-    icon: discord,
+    id: 3,
+    data: "jordan.bhar@hotmail.com" ,
+    icon: mail,
   },
   {
-    id: 1,
+    id: 3,
     data: "Jordan Bhar" ,
-    icon: whatsapp,
+    icon: linkedin,
   },
-  
+  {
+    id: 4,
+    data: "obsidiancobraa" ,
+    icon: discord,
+  },
 ]
 
 export const projectData = [

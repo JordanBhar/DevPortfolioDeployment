@@ -6,7 +6,9 @@ import profile from "./pfp.jpg"
 import discord from "./discord.svg"
 import school from "./school.svg"
 import location from "./location.svg"
-import whatsapp from "./whatsapp.svg"
+import resume from "./Jordan_Resume_2023.pdf"
+import mail from "./envelope-fill.svg"
+
 
 
 //NOTE : THIS IS A FILE TO COMPILE ALL THE ASSETS INTO ONE FILE
@@ -21,5 +23,6 @@ export {
   discord,
   location,
   school,
-  whatsapp,
+  resume,
+  mail
 };

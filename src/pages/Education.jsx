@@ -5,16 +5,16 @@ import { EducationData } from "../constants";
 export const Education = () => {
   return (
     <section id="Education">
-      <div className={`${styles.paddingX} ${styles.flexCenter} `}>
-        <div className={`${styles.boxWidth}`}>
-          <h2 className={`${styles.headerOneText} text-white my-5`}>
-            <div className={`${styles.row} items-center`}>
+      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth} `}>
+          <h2 className={`${styles.headerOneText} text-white my-5 `}>
+            <div className={`${styles.row} items-center `}>
               <p className="whitespace-nowrap">Education & Courses</p>
               <hr className={styles.horizontalRuleRight}></hr>
             </div>
           </h2>
 
-          <div className={styles.containers}>
+          <div className={`${styles.containers}  shadow-2xl shadow-black`}>
             <p className="text-2xl md:text-4xl font-bold text-white mb-10">
               <span className="text-gradient">{EducationData.schoolName}</span>
             </p>

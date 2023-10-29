@@ -53,10 +53,10 @@ const Home = () => {
                 ))}
               </div>
               {/* Mobile Profile Image - Shows only when in smaller screens */}
-              <div className="md:hidden flex justify-center">
+              <div className="md:hidden flex justify-center ">
                 <img
                   src={profile}
-                  className={stylesHome.profileImg}
+                  className={`${stylesHome.profileImg}  shadow-2xl shadow-black`}
                   alt="Profile"
                 />
               </div>

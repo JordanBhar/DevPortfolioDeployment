@@ -1,25 +1,33 @@
-import React from 'react';
-import styles from '../style';
+import React from "react";
+import styles from "../style";
 
 function Card(props) {
-  const { projectName, repoLink, demoLink ,imgPath,projectLanguages,projectTools, projectDescription} = props;
+  const {
+    projectName,
+    repoLink,
+    demoLink,
+    imgPath,
+    projectLanguages,
+    projectTools,
+    projectDescription,
+  } = props;
 
-  const card = 'w-a h-a flex flex-col justify-start p-3 space-y-5 relative'; // Add 'relative' class here
+  const card = "w-a h-a flex flex-col justify-start p-3 space-y-5 relative"; // Add 'relative' class here
 
-  const linkContainer = 'absolute bottom-3 right-3';
-  const imageContainer = 'border-2 rounded-md h-[200px] relative'; // Add 'relative' class here
+  const linkContainer = "absolute bottom-3 right-3";
+  const imageContainer = "border-2 rounded-md h-[200px] relative"; // Add 'relative' class here
 
   return (
     <div className={card}>
       <div className={`${styles.row} ${styles.smallTextTitle} font-bold`}>
-        <h2 className='whitespace-nowrap text-teal-300'>{projectName}</h2>
+        <h2 className="whitespace-nowrap text-teal-300">{projectName}</h2>
         <hr className={styles.horizontalRuleRight}></hr>
       </div>
 
       <div className={imageContainer}>
         <img
-          src='https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000'
-          className='z-10 h-full w-full object-cover' // Use object-cover to fit the image within the container
+          src="https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000"
+          className="z-10 h-full w-full object-cover" // Use object-cover to fit the image within the container
           alt="img"
         />
         <div className={`${linkContainer}`}>
@@ -38,10 +46,18 @@ function Card(props) {
         </div>
       </div>
 
-      <div className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify`}>
-        <p className=''><span className='text-teal-300'>Languages: </span>{projectLanguages}</p>
-        <p className=''><span className='text-teal-300'>Tools: </span>{projectTools}</p>
-        <p className='mt-2'>{projectDescription}</p>
+      <div
+        className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify`}
+      >
+        <p className="">
+          <span className="text-teal-300">Languages: </span>
+          {projectLanguages}
+        </p>
+        <p className="">
+          <span className="text-teal-300">Tools: </span>
+          {projectTools}
+        </p>
+        <p className="mt-2">{projectDescription}</p>
       </div>
     </div>
   );

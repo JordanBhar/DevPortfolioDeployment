@@ -1,5 +1,4 @@
-import {  linkedin, school, location, discord, mail  } from "../assets";
-
+import { linkedin, school, location, discord, mail } from "../assets";
 
 export const navLinks = [
   {
@@ -18,87 +17,116 @@ export const navLinks = [
     id: "Education",
     title: "Education",
   },
-  {
-    id: "Contact",
-    title: "Contact",
-  },
+  // {
+  //   id: "Contact",
+  //   title: "Contact",
+  // },
 ];
 
 export const aboutData = [
-
   {
     name: "Jordan Bhar",
     job: "Full-Stack Developer",
-    about: "Insert Text Here",
+    about:
+      "I'm a Mobile & Web applications developer with 5 years dedicated to perfecting Developer Experience. My applications stand out for their aesthetics, functionality, and intuitive user experiences. My commitment to continuous self-learning keeps me ahead in technological advances, ensuring my work is always at the cutting edge. Through my portfolio, you'll see my drive, the impact of my projects, and my passion for pushing mobile & web development boundaries. Let's collaborate and make your digital vision a reality!",
     github: "https://github.com/JordanBhar",
-//the resume should be a file path to an asset of my resume within this project
-    resume: "" 
-  }
+    //the resume should be a file path to an asset of my resume within this project
+    resume: "",
+  },
+];
 
-]
+export const EducationData = {
+  schoolName: "Sheridan College",
+  porgramName: "Mobile Computing",
+  programDuration: "4 years",
+  about:
+    "My Developer Journey began in high school and truly started to accelerate and prosper while I was at Sheridan College. I enrolled in the 4-5 year Mobile Computing Degree program at Sheridan. Throughout my academic journey at Sheridan, I acquired a vast array of knowledge, ranging from Website Design & Creation to Mobile App Development for both IOS & Android. I also delved deep into .NET API & MVC applications, explored Wired & Wireless Network Communications, grasped the intricacies of Software Design & Engineering Principles, understood Data Structures & Algorithms, and delved into Operating System Design & Analysis. Sheridan College not only enhanced my technical skills but also broadened my perspective on the potential and versatility of computer science. It has been a cornerstone in solidifying my foundational understanding and has equipped me with the tools necessary to tackle complex technological challenges.",
+};
 
 export const tabViewsSkillsEducation = [
-    {
-      id: 1,
-      title: "Programming",
-      skills: ["C & C++", "C#", "Swift" ,"Kotlin", "Java", "Python", "Dart & Flutter"],
-    },
-    {
-      id: 2,
-      title: "Front-end",
-      skills: ["HTML", "CSS", "BootStrap CSS", "Tailwind CSS","React JS", "Swift UI"],
-    },
-    {
-      id: 3,
-      title: "Back-end",
-      skills: [".NET", "SpringBoot", "Node JS"],
-    },
-    {
-      id: 4,
-      title: "Database",
-      skills: ["Firebase", "SQL", "SQL lite"],
-    },
-    {
-      id: 5,
-      title: "Testing",
-      skills: ["xUnit",],
-    },
-    {
-      id: 6,
-      title: "Tools",
-      skills: ["Xcode", "Visual Studio Code", "IntelliJ" ,"CLion", "GIT", "Github", "Figma", "Postman"],
-    },
-    
-    
-] 
+  {
+    id: 1,
+    title: "Programming",
+    skills: [
+      "C & C++",
+      "C#",
+      "Swift",
+      "Kotlin",
+      "Java",
+      "Python",
+      "Dart & Flutter",
+    ],
+  },
+  {
+    id: 2,
+    title: "Front-end",
+    skills: [
+      "HTML",
+      "CSS",
+      "BootStrap CSS",
+      "Tailwind CSS",
+      "React JS",
+      "Swift UI",
+    ],
+  },
+  {
+    id: 3,
+    title: "Back-end",
+    skills: [".NET", "SpringBoot", "Node JS"],
+  },
+  {
+    id: 4,
+    title: "Database",
+    skills: ["Firebase", "SQL", "SQL lite"],
+  },
+  {
+    id: 5,
+    title: "Testing",
+    skills: ["xUnit"],
+  },
+  {
+    id: 6,
+    title: "Tools",
+    skills: [
+      "Xcode",
+      "Visual Studio Code",
+      "IntelliJ",
+      "CLion",
+      "GIT",
+      "Github",
+      "Figma",
+      "Postman",
+    ],
+  },
+];
 
 export const contactData = [
   {
     id: 1,
-    data: "Toronto, Ontario" ,
+    data: "Toronto, Ontario",
     icon: location,
   },
   {
     id: 2,
-    data: "Sheridan College" ,
+    data: "Sheridan College",
     icon: school,
   },
   {
     id: 3,
-    data: "jordan.bhar@hotmail.com" ,
+    data: "jordan.bhar@hotmail.com",
     icon: mail,
   },
   {
     id: 3,
-    data: "Jordan Bhar" ,
+    data: "Jordan Bhar",
     icon: linkedin,
   },
   {
     id: 4,
-    data: "obsidiancobraa" ,
+    data: "obsidiancobraa",
     icon: discord,
   },
-]
+];
 
 export const projectData = [
   {
@@ -109,18 +137,20 @@ export const projectData = [
     imgPth: "",
     languages: "Swift & Swift UI",
     tools: "XCode, Firebase, APIs",
-    description: "Used Swift UI & Xcode  to create a fitness application, in which I implemented an Exercise Tutorial section & cardio section. Other features of the app include a pedometer, Realtime user database, fitness calendar which were implemented by my other group partners  "
+    description:
+      "Used Swift UI & Xcode  to create a fitness application, in which I implemented an Exercise Tutorial section & cardio section. Other features of the app include a pedometer, Realtime user database, fitness calendar which were implemented by my other group partners  ",
   },
   {
     // i need to download and post as my own project so ppl can see the code
     id: 2,
     projectName: "Movie Database",
-    projectRepoLink: "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main", 
+    projectRepoLink:
+      "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main",
     projectDemoLink: "",
     imgPth: "",
     languages: "C#, .NET, HTML/CSS/JS",
     tools: "Visual Studio Code, Postman",
-    description: "A Movie database application created with C# & .NET "
+    description: "A Movie database application created with C# & .NET ",
   },
   {
     // i need to download and post as my own project so ppl can see the code
@@ -131,8 +161,8 @@ export const projectData = [
     imgPth: "",
     languages: "Swift & Swift UI",
     tools: "XCode, Firebase, APIs",
-    description: "A IOS application using Swift. This application uses Machine Learning (Image to text) & Google Shopping API. The user can look up any product either manually or by taking a photo of an item, and then uses shopping api to query  for intended product. This project was a group project with two other group members "
-    
+    description:
+      "A IOS application using Swift. This application uses Machine Learning (Image to text) & Google Shopping API. The user can look up any product either manually or by taking a photo of an item, and then uses shopping api to query  for intended product. This project was a group project with two other group members ",
   },
   {
     id: 4,
@@ -142,10 +172,10 @@ export const projectData = [
     imgPth: "",
     languages: "Java, HTML/CSS/JS , SpringBoot, thymeleaf",
     tools: "InteliJ",
-    description: "MVC web application for PROG20261, Using Spring boot / Java. A user database was implemented. Each user had a role of cat or dog and with these roles gave users access to different pages of a website"
+    description:
+      "MVC web application for PROG20261, Using Spring boot / Java. A user database was implemented. Each user had a role of cat or dog and with these roles gave users access to different pages of a website",
   },
-]
-
+];
 
 export const socialMedia = [
   {
@@ -153,8 +183,4 @@ export const socialMedia = [
     icon: linkedin,
     link: "https://www.linkedin.com/in/jordan-bhar/?originalSubdomain=ca",
   },
-
 ];
-
-
-

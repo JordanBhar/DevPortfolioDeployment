@@ -1,13 +1,13 @@
 import logo from "./Logo.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
-import linkedin from "./linkedin.svg";
-import profile from "./profile.png"
-import discord from "./discord.svg"
-import school from "./school.svg"
-import location from "./location.svg"
-import resume from "./Jordan_Resume_2023.pdf"
-import mail from "./envelope-fill.svg"
+import menu from "./Navbar/menu.svg";
+import close from "./Navbar/close.svg";
+import linkedin from "./Profile/linkedin.svg";
+import profile from "./Profile/profile.png"
+import discord from "./Profile/discord.svg"
+import school from "./Profile/school.svg"
+import location from "./Profile/location.svg"
+import resume from "./Profile/Jordan_Resume_2023.pdf"
+import mail from "./Profile/envelope-fill.svg"
 
 
 

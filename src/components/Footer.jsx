@@ -1,46 +1,40 @@
 import React from "react";
 import { logo } from "../assets";
+import Links from "../components/Links";
 import styles from "../style";
 const Footer = () => {
   return (
-    <footer className="bg-acrylic text-white mt-[100px] p-10 px-10 lg:px-32">
-      <div className="flex justify-center mb-8">
-        <div className="text-center">
-          <img
-            src={logo}
-            className="h-[125px] w-[125px] xs:scale-75 p-[15px] ml-[10px]"
-            alt="Logo"
-          />
-          <p className="text-sm">
-            Living, learning, & leveling up one day at a time.
-          </p>
-        </div>
+    <footer className="bg-acrylic text-white mt-[100px]  pt-10 lg:px-32">
+      <div className="flex justify-center items-center ">
+        <img
+          src={logo}
+          className="h-[125px] w-[125px]  p-[15px] ml-[10px]"
+          alt="Logo"
+        />
+      </div>
+
+      <div className="flex-col  ">
+        <p className="text-lg text-center">
+          Living, learning, & leveling up one day at a time.
+        </p>
+      </div>
+
+      <div className="flex justify-center m-[40px]">
+        <div className="text-center"></div>
 
         <div className="flex space-x-4">
           {/* Add your social media links */}
-          <a href="#" className="text-xl">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-behance"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fab fa-github"></i>
-          </a>
-          <a href="#" className="text-xl">
-            <i className="fas fa-envelope"></i>
-          </a>
+          <Links></Links>
         </div>
       </div>
 
-      <div className="flex justify-center text-sm">
-        <p>Handcrafted by me &copy; twentytwenty</p>
+      <div className="flex justify-center text-md py-5">
+        <div className="flex-col">
+        <p>Created by Jordan Bhar &copy; 2023 </p>
         <p>
-          Made with <span className="text-red-500">❤️</span> BULMA
+          Made with <span className="text-red-500">❤️</span> React + Tailwind
         </p>
+        </div>
       </div>
     </footer>
   );

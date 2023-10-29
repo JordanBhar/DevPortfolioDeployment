@@ -12,7 +12,7 @@ const Home = () => {
     if (confirmDownload) {
       // The user confirmed the download, trigger the download.
       const resumeLink = document.createElement("a");
-      resumeLink.href = "../src/assets/Jordan_Resume_2023.pdf"; // Replace with the actual path to your resume PDF.
+      resumeLink.href = "../src/assets/Profile/Jordan_Resume_2023.pdf"; // Replace with the actual path to your resume PDF.
       resumeLink.download = "Jordan_Resume_2023.pdf"; // Replace with the desired name for the downloaded file.
       resumeLink.click();
     }

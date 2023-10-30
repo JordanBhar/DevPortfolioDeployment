@@ -178,21 +178,25 @@ export const socialMediaLinks = [
     id: "social-media-1",
     icon: linkedinFooterIcon,
     link: "https://www.linkedin.com/in/jordan-bhar/?originalSubdomain=ca",
+    name: "LinkedIn",
   },
   {
     id: "social-media-2",
     icon: mailFooterIcon,
     link: "mailto:jordan.bhar@hotmail.com",
+    name: "E-Mail",
   },
   {
     id: "social-media-2",
     icon: discordFooterIcon,
     link: "https://discord.gg/KbTqQBJh9K",
+    name: "Discord",
   },
   {
     id: "social-media-4",
     icon: githubFooterIcon,
     link: "https://github.com/JordanBhar",
+    name: "Github",
   },
   
 ];

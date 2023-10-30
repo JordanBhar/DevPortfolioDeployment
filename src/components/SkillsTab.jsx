@@ -40,7 +40,7 @@ const SkillsTab = () => {
     <div>
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         {/* Show TabList on screens larger than small (sm) */}
-        <TabList className="hidden md:flex pb-2 px-5 space-x-4 text-white flex flex-row items-center flex-wrap border-b-2">
+        <TabList className="hidden md:flex pb-2 px-5 space-x-5 text-white flex flex-row items-center flex-wrap ">
           {tabViewsSkillsEducation.map((skills) => (
             <Tab
               className="transition duration-700 ease-in-out hover:text-teal-300 "
@@ -95,7 +95,7 @@ const SkillsTab = () => {
           ) : null}
         </div>
 
-        <div className="m-5 border border-white p-10 rounded-xl text-white">
+        <div className="m-2 border border-white border-4 p-16 rounded-xl text-white">
           {tabViewsSkillsEducation.map((skills, index) => (
             <TabPanel key={skills.id}>
               {selectedTab === index && (
@@ -106,7 +106,7 @@ const SkillsTab = () => {
                     skills.skills.map((skill, skillIndex) => (
                       <li
                         key={skillIndex}
-                        className="border-2 border-teal-300 rounded-full px-5 py-2"
+                        className="border-4 border-teal-300 rounded-full px-5 py-2"
                       >
                         {skill}
                       </li>

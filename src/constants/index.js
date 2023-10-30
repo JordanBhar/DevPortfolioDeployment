@@ -1,4 +1,4 @@
-import { linkedin, school, location, discord, mail } from "../assets";
+import { linkedinProfileIcon, schoolProfileIcon, locationProfileIcon, discordProfileIcon, githubProfileIcon, mailProfileIcon,githubFooterIcon,discordFooterIcon,mailFooterIcon,linkedinFooterIcon } from "../assets";
 
 export const navLinks = [
   {
@@ -17,10 +17,6 @@ export const navLinks = [
     id: "Education",
     title: "Education",
   },
-  // {
-  //   id: "Contact",
-  //   title: "Contact",
-  // },
 ];
 
 export const aboutData = [
@@ -104,27 +100,27 @@ export const contactData = [
   {
     id: 1,
     data: "Toronto, Ontario",
-    icon: location,
+    icon: locationProfileIcon,
   },
   {
     id: 2,
     data: "Sheridan College",
-    icon: school,
+    icon: schoolProfileIcon,
   },
   {
     id: 3,
     data: "jordan.bhar@hotmail.com",
-    icon: mail,
+    icon: mailProfileIcon,
   },
   {
     id: 3,
     data: "Jordan Bhar",
-    icon: linkedin,
+    icon: linkedinProfileIcon,
   },
   {
     id: 4,
     data: "obsidiancobraa",
-    icon: discord,
+    icon: discordProfileIcon,
   },
 ];
 
@@ -177,10 +173,26 @@ export const projectData = [
   },
 ];
 
-export const socialMedia = [
+export const socialMediaLinks = [
   {
     id: "social-media-1",
-    icon: linkedin,
+    icon: linkedinFooterIcon,
     link: "https://www.linkedin.com/in/jordan-bhar/?originalSubdomain=ca",
   },
+  {
+    id: "social-media-2",
+    icon: mailFooterIcon,
+    link: "mailto:jordan.bhar@hotmail.com",
+  },
+  {
+    id: "social-media-2",
+    icon: discordFooterIcon,
+    link: "https://discord.gg/KbTqQBJh9K",
+  },
+  {
+    id: "social-media-4",
+    icon: githubFooterIcon,
+    link: "https://github.com/JordanBhar",
+  },
+  
 ];

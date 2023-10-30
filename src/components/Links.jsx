@@ -3,7 +3,7 @@ import { socialMediaLinks } from "../constants";
 
 const Links = () => {
   return (
-    <div className="flex justify-center space-x-[45px] lg:space-x-[100px] sm:space-x-[75px] ">
+    <div className="flex justify-center space-x-[45px] sm:space-x-[75px] lg:space-x-[150px]">
       {socialMediaLinks.map((socialMedia) => (
         <div className="flex-row">
           <a

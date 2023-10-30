@@ -12,7 +12,7 @@ import mailProfileIcon from "./Profile/envelope-fill.svg"
 import resumeProfileIcon from "./Profile/resume.svg"
 import githubProfileIcon from "./Profile/github.svg"
 
-import githubFooterIcon from "./Footericons/github.svg"
+import githubFooterIcon from "./Footericons/githubb.svg"
 import discordFooterIcon from "./Footericons/discord.svg"
 import mailFooterIcon from "./Footericons/envelope-fill.svg"
 import linkedinFooterIcon from "./Footericons/linkedin.svg"

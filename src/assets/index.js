@@ -13,9 +13,9 @@ import resumeProfileIcon from "./Profile/resume.svg"
 import githubProfileIcon from "./Profile/github.svg"
 
 import githubFooterIcon from "../../src/assets/FooterIcons/githubb.svg"
-import discordFooterIcon from "./Footericons/discord.svg"
-import mailFooterIcon from "./Footericons/envelope-fill.svg"
-import linkedinFooterIcon from "./Footericons/linkedin.svg"
+import discordFooterIcon from "../../src/assets/FooterIcons/discord.svg"
+import mailFooterIcon from "../../src/assets/FooterIcons/envelope-fill.svg"
+import linkedinFooterIcon from "../../src/assets/FooterIcons/linkedin.svg"
 
 
 //NOTE : THIS IS A FILE TO COMPILE ALL THE ASSETS INTO ONE FILE

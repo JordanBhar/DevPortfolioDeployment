@@ -101,20 +101,20 @@ const App = () => {
           <div className="mx-auto relative">
             <Navbar />
             <div className="space-y-40">
-              <div id="Home" className="relative">
+              <div id="Home" className="relative md:scale-90">
                 <Home />
               </div>
-              <div id="Skills" className="relative">
+              <div id="Skills" className="relative md:scale-90">
                 <Skills />
               </div>
-              <div id="Projects" className="relative">
+              <div id="Projects" className="relative md:scale-90">
                 <Projects />
               </div>
-              <div id="Education" className="relative">
+              <div id="Education" className="relative md:scale-90">
                 <Education />
               </div>
             </div>
-            <Footer />
+              <Footer />
           </div>
         </div>
       </div>

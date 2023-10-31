@@ -4,7 +4,7 @@ import Links from "../components/Links";
 import styles from "../style";
 const Footer = () => {
   return (
-    <footer className="bg-acrylic text-white mt-[100px]  pt-10 lg:px-32">
+    <footer className="bg-acrylic text-white mt-[300px] w-full pt-10 lg:px-32">
       <div className="flex justify-center items-center ">
         <img
           src={logo}
@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
 
       <div className="flex-col  ">
-        <p className="text-lg text-center">
+        <p className=" text-sm md:text-lg text-center">
           Living, learning, & leveling up one day at a time.
         </p>
       </div>

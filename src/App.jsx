@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Matter from 'matter-js';
+import Matter from "matter-js";
 import styles from "./style";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -11,10 +11,10 @@ const FloatingSpheres = ({ count }) => {
 
   useEffect(() => {
     const Engine = Matter.Engine,
-          Render = Matter.Render,
-          World = Matter.World,
-          Bodies = Matter.Bodies,
-          Body = Matter.Body;
+      Render = Matter.Render,
+      World = Matter.World,
+      Bodies = Matter.Bodies,
+      Body = Matter.Body;
 
     const engine = Engine.create();
 
@@ -28,8 +28,8 @@ const FloatingSpheres = ({ count }) => {
         width: window.innerWidth,
         height: document.documentElement.scrollHeight,
         wireframes: false,
-        background: 'transparent'
-      }
+        background: "transparent",
+      },
     });
 
     const spheres = [];
@@ -40,10 +40,10 @@ const FloatingSpheres = ({ count }) => {
 
       const sphere = Bodies.circle(x, y, radius, {
         render: {
-          fillStyle: 'teal',
-          strokeStyle: 'teal',
-          lineWidth: 0
-        }
+          fillStyle: "teal",
+          strokeStyle: "teal",
+          lineWidth: 0,
+        },
       });
 
       spheres.push(sphere);
@@ -55,12 +55,16 @@ const FloatingSpheres = ({ count }) => {
 
     // Periodically apply random forces to the spheres
     setInterval(() => {
-      spheres.forEach(sphere => {
+      spheres.forEach((sphere) => {
         const randomForce = {
           x: (Math.random() - 0.5) * 0.005,
-          y: (Math.random() - 0.5) * 0.005
+          y: (Math.random() - 0.5) * 0.005,
         };
-        Body.applyForce(sphere, { x: sphere.position.x, y: sphere.position.y }, randomForce);
+        Body.applyForce(
+          sphere,
+          { x: sphere.position.x, y: sphere.position.y },
+          randomForce
+        );
       });
     }, 5000);
 
@@ -73,10 +77,12 @@ const FloatingSpheres = ({ count }) => {
   }, [count]);
 
   return (
-    <div ref={containerRef} className="absolute top-0 left-0 w-full h-full z-1"></div>
+    <div
+      ref={containerRef}
+      className="absolute top-0 left-0 w-full h-full z-1"
+    ></div>
   );
 };
-
 
 const BlurLayer = () => {
   return (

@@ -17,11 +17,21 @@
 } */
 
 @keyframes moveAround {
-  0% { transform: translate(0, 0); }
-  25% { transform: translate(50px, 50px); }
-  50% { transform: translate(0, 100px); }
-  75% { transform: translate(-50px, 50px); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 50px);
+  }
+  50% {
+    transform: translate(0, 100px);
+  }
+  75% {
+    transform: translate(-50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .animate-move {
@@ -29,11 +39,9 @@
   animation-timing-function: linear;
 }
 
-
 .animate-float {
   animation: float 3s infinite;
 }
-
 
 :root {
   --black-gradient: linear-gradient(
@@ -91,8 +99,6 @@
   -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-
-
 
 @-webkit-keyframes slide-top {
   0% {

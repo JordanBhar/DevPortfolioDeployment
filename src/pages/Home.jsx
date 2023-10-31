@@ -20,12 +20,11 @@ const Home = () => {
 
   return (
     <section className="mt-16" id="Home">
-      <div className={`${styles.flexCenter} container`}>
-        <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.flexCenter} `}>
+        <div className={styles.boxWidth}>
           <div className="flex flex-col md:flex-row space-y-5 md:space-y-10 md:space-x-40">
-            {/* Row Item 1 */}
             <div
-              className={`${styles.containers} md:w-5/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black`}
+              className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}
             >
               <div className="space-y-5">
                 <p className="text-2xl md:text-3xl font-bold text-white">
@@ -39,38 +38,33 @@ const Home = () => {
                 </p>
               </div>
               <p className={styles.regularText}>{aboutData[0].about}</p>
-              <div className={`${styles.col} items-start space-y-5`}>
+              <div className="items-start space-y-5">
                 {contactData.map((contact) => (
-                  <div className={`${styles.row} gap-x-4`} key={contact.data}>
+                  <div className="flex gap-x-4" key={contact.data}>
                     <object
                       data={contact.icon}
                       height="30"
                       width="30"
                       className={styles.icons}
                     ></object>
-                    <p className={`${styles.regularText}`}>{contact.data}</p>
+                    <p className={styles.regularText}>{contact.data}</p>
                   </div>
                 ))}
               </div>
-              {/* Mobile Profile Image - Shows only when in smaller screens */}
-              <div className="md:hidden flex justify-center ">
+              <div className="md:hidden flex justify-center">
                 <img
                   src={profile}
-                  className={`${stylesHome.profileImg}  shadow-2xl shadow-black`}
+                  className={`${stylesHome.profileImg} shadow-2xl`}
                   alt="Profile"
                 />
               </div>
-              {/* Buttons */}
-              <div
-                className={`flex flex-col ss:flex-row  pt-[30px] ss:space-x-5 ss:justify-center sm:justify-start gap-y-5`}
-              >
-                {/* Button 1 */}
+              <div className="flex flex-col md:flex-row pt-[30px] md:space-x-10 md:justify-start gap-y-5">
                 <a
                   className={stylesHome.aboutButtons}
                   href="#"
                   onClick={handleDownloadResume}
                 >
-                  <div className={`${styles.row} items-center gap-x-2`}>
+                  <div className="flex items-center gap-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -84,12 +78,11 @@ const Home = () => {
                     Resume
                   </div>
                 </a>
-                {/* Button 2 */}
                 <a
                   className={stylesHome.aboutButtons}
                   href={aboutData[0].github}
                 >
-                  <div className={`${styles.row} items-center gap-x-2`}>
+                  <div className="flex items-center gap-x-2">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -105,9 +98,8 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            {/* Row Item 2 */}
-            <div className="flex flex-row md:flex md:w-3/4 hidden  justify-start  xl:justify-center">
-              <div className={`${styles.col} justify-center`}>
+            <div className="md:w-2/4 collapse md:visible flex justify-center items-center">
+              <div className="flex-col">
                 <img
                   src={profile}
                   className={stylesHome.profileImg}

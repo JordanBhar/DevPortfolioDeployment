@@ -1,4 +1,15 @@
-import { linkedinProfileIcon, schoolProfileIcon, locationProfileIcon, discordProfileIcon, githubProfileIcon, mailProfileIcon, githubFooterIcon, discordFooterIcon, mailFooterIcon, linkedinFooterIcon } from "../assets";
+import {
+  linkedinProfileIcon,
+  schoolProfileIcon,
+  locationProfileIcon,
+  discordProfileIcon,
+  githubProfileIcon,
+  mailProfileIcon,
+  githubFooterIcon,
+  discordFooterIcon,
+  mailFooterIcon,
+  linkedinFooterIcon,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -198,5 +209,4 @@ export const socialMediaLinks = [
     link: "https://github.com/JordanBhar",
     name: "Github",
   },
-  
 ];

@@ -25,7 +25,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row space-y-5 md:space-y-10 md:space-x-40">
             {/* Row Item 1 */}
             <div
-              className={`${styles.containers} md:w-5/6 lg:w-4/8 space-y-5 md:space-y-10`}
+              className={`${styles.containers} md:w-5/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black`}
             >
               <div className="space-y-5">
                 <p className="text-2xl md:text-3xl font-bold text-white">

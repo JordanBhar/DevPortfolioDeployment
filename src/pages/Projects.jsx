@@ -6,15 +6,15 @@ export const Projects = () => {
   return (
     <section id="Projects">
       <div className={`${styles.paddingX} ${styles.flexCenter} `}>
-        <div className={`${styles.boxWidth}`}>
-          <h2 className={`${styles.headerOneText} text-white my-5`}>
-            <div className={`${styles.row} items-center`}>
+        <div className={`${styles.boxWidth} `}>
+          <h2 className={`${styles.headerOneText} text-white my-5 `}>
+            <div className={`${styles.row} items-center `}>
               Projects
               <hr className={styles.horizontalRuleRight}></hr>
             </div>
           </h2>
 
-          <div className={styles.containers}>
+          <div className={`${styles.containers}  shadow-2xl shadow-black`}>
             <ProjectGallery />
           </div>
         </div>

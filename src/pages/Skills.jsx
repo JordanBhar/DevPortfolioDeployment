@@ -14,7 +14,7 @@ export const Skills = () => {
             </div>
           </h2>
 
-          <div className={styles.containers}>
+          <div className={`${styles.containers}  shadow-2xl shadow-black`}>
             <SkillsTab />
           </div>
         </div>

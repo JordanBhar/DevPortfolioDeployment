@@ -11,13 +11,15 @@ import resume from "./Profile/Jordan_Resume_2023.pdf"
 import mailProfileIcon from "./Profile/envelope-fill.svg"
 import resumeProfileIcon from "./Profile/resume.svg"
 import githubProfileIcon from "./Profile/github.svg"
+import demoIcon from "./Profile/google-play.svg"
+
 
 import githubFooterIcon from "../../src/assets/FooterIcons/githubb.svg"
 import discordFooterIcon from "../../src/assets/FooterIcons/discord.svg"
 import mailFooterIcon from "../../src/assets/FooterIcons/envelope-fill.svg"
 import linkedinFooterIcon from "../../src/assets/FooterIcons/linkedin.svg"
 
-
+import Pbg from "../assets/projectBG/bg.jpg"
 //NOTE : THIS IS A FILE TO COMPILE ALL THE ASSETS INTO ONE FILE
 // please replace the images and other assets as needed
 
@@ -26,6 +28,7 @@ export {
   menu,
   close,
   resume,
+  Pbg,
 
   linkedinProfileIcon,
   profile,
@@ -35,6 +38,7 @@ export {
   resumeProfileIcon,
   mailProfileIcon,
   githubProfileIcon,
+  demoIcon,
 
   githubFooterIcon,
   discordFooterIcon,

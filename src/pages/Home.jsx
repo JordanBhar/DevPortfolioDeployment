@@ -3,6 +3,7 @@ import styles from "../style";
 import { stylesHome } from "../style";
 import { profile } from "../assets";
 import { contactData, aboutData } from "../constants";
+import { ContactInfo } from "../components";
 
 const Home = () => {
   const handleDownloadResume = () => {
@@ -23,9 +24,8 @@ const Home = () => {
       <div className={`${styles.flexCenter} `}>
         <div className={styles.boxWidth}>
           <div className="flex flex-col md:flex-row space-y-5 md:space-y-10 md:space-x-40">
-            <div
-              className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}
-            >
+      
+            <div className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}>
               <div className="space-y-5">
                 <p className="text-2xl md:text-3xl font-bold text-white">
                   Hello, My Name Is
@@ -40,19 +40,13 @@ const Home = () => {
               
               <p className={styles.regularText}>{aboutData[0].about}</p>
 
-              <div className="items-start space-y-5">
-                {contactData.map((contact) => (
-                  <div className="flex gap-x-4" key={contact.data}>
-                    <object
-                      data={contact.icon}
-                      height="35"
-                      width="35"
-                      className={styles.icons}
-                    ></object>
-                    <p className={`${styles.regularText}`}>{contact.data}</p>
-                  </div>
-                ))}
-              </div>
+              
+
+              {contactData.map((data) => (
+                <ContactInfo  contactName={data.data} contactIcon={data.icon} ></ContactInfo>
+              ))}
+
+              {/* Profile Img Mobile*/}
               <div className="md:hidden flex justify-center">
                 <img
                   src={profile}
@@ -60,6 +54,8 @@ const Home = () => {
                   alt="Profile"
                 />
               </div>
+
+              {/* Buttons */}
               <div className="flex flex-col md:flex-row pt-[30px] md:space-x-10 md:justify-start gap-y-5">
                 <a
                   className={stylesHome.aboutButtons}
@@ -100,6 +96,8 @@ const Home = () => {
                 </a>
               </div>
             </div>
+            
+            {/* Profile Img Desktop*/}
             <div className="md:w-2/4 collapse md:visible flex justify-center items-center">
               <div className="flex-col">
                 <img
@@ -109,6 +107,7 @@ const Home = () => {
                 />
               </div>
             </div>
+            
           </div>
         </div>
       </div>

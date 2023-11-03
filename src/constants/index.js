@@ -9,6 +9,7 @@ import {
   discordFooterIcon,
   mailFooterIcon,
   linkedinFooterIcon,
+  Pbg,
 } from "../assets";
 
 export const navLinks = [

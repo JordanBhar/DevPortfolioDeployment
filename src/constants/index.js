@@ -150,18 +150,6 @@ export const projectData = [
   {
     // i need to download and post as my own project so ppl can see the code
     id: 2,
-    projectName: "Movie Database",
-    projectRepoLink:
-      "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main",
-    projectDemoLink: "",
-    imgPth: "",
-    languages: "C#, .NET, HTML/CSS/JS",
-    tools: "Visual Studio Code, Postman",
-    description: "A Movie database application created with C# & .NET ",
-  },
-  {
-    // i need to download and post as my own project so ppl can see the code
-    id: 3,
     projectName: "Shop Till You Drop",
     projectRepoLink: "https://github.com/TristarMMII/STYD",
     projectDemoLink: "",
@@ -170,6 +158,18 @@ export const projectData = [
     tools: "XCode, Firebase, APIs",
     description:
       "A IOS application using Swift. This application uses Machine Learning (Image to text) & Google Shopping API. The user can look up any product either manually or by taking a photo of an item, and then uses shopping api to query  for intended product. This project was a group project with two other group members ",
+  },
+  {
+    // i need to download and post as my own project so ppl can see the code
+    id: 3,
+    projectName: "Perfect Pronunciation",
+    projectRepoLink: "https://github.com/ahmadmua/Perfect-Pronunciation",
+    projectDemoLink: "",
+    imgPth: "",
+    languages: "Swift & Swift UI",
+    tools: "XCode, Firebase, APIs, Machine Learning",
+    description:
+      "A IOS application using Swift. This application uses Machine Learning (Speech Analysis), Gamification, Data Analytics, in order to Improve Non-English Speakers Fluency in English. This project was a group project with two other group members ",
   },
   {
     id: 4,
@@ -181,6 +181,18 @@ export const projectData = [
     tools: "InteliJ",
     description:
       "MVC web application for PROG20261, Using Spring boot / Java. A user database was implemented. Each user had a role of cat or dog and with these roles gave users access to different pages of a website",
+  },
+  {
+    // i need to download and post as my own project so ppl can see the code
+    id: 5,
+    projectName: "Movie Database",
+    projectRepoLink:
+      "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main",
+    projectDemoLink: "",
+    imgPth: "",
+    languages: "C#, .NET, HTML/CSS/JS",
+    tools: "Visual Studio Code, Postman",
+    description: "A Movie database application created with C# & .NET ",
   },
 ];
 

@@ -25,6 +25,7 @@ export {
   logo,
   menu,
   close,
+  resume,
 
   linkedinProfileIcon,
   profile,

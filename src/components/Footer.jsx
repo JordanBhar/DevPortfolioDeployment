@@ -4,7 +4,7 @@ import Links from "../components/Links";
 import styles from "../style";
 const Footer = () => {
   return (
-    <footer className="bg-acrylic text-white mt-[300px] w-full pt-10 lg:px-32">
+    <footer className="bg-zinc-900 text-white mt-[300px] w-full pt-10 lg:px-32">
       <div className="flex justify-center items-center ">
         <img
           src={logo}
@@ -30,10 +30,10 @@ const Footer = () => {
 
       <div className="flex justify-center text-md py-5">
         <div className="flex-col">
-        <p>Created by Jordan Bhar &copy; 2023 </p>
-        <p>
-          Made with <span className="text-red-500">❤️</span> React + Tailwind
-        </p>
+          <p>Created by Jordan Bhar &copy; 2023 </p>
+          <p>
+            Made with <span className="text-red-500">❤️</span> React + Tailwind
+          </p>
         </div>
       </div>
     </footer>

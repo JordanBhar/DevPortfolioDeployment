@@ -12,11 +12,12 @@ const Links = () => {
           >
             <img
               src={`${socialMedia.icon}`}
-              
               className="text-white w-[20px] h-[20px] sm:w-[25px] sm:h-[25px] md:w-[35px] md:h-[35px] lg:w-[45px] lg:h-[45px]"
             ></img>
           </a>
-          <p className="text-center mt-3 text-sm md:text-md">{socialMedia.name}</p>
+          <p className="text-center mt-3 text-sm md:text-md">
+            {socialMedia.name}
+          </p>
         </div>
       ))}
       {/* Add more icons as needed */}

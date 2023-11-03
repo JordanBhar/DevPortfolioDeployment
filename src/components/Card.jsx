@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../style";
-import { githubProfileIcon, demoIcon } from "../assets"
+import { githubProfileIcon, demoIcon } from "../assets";
 
 function Card(props) {
   const {
@@ -13,39 +13,45 @@ function Card(props) {
     projectDescription,
   } = props;
 
-  const card = "w-a h-a flex flex-col justify-start p-5 space-y-5 relative"; // Add 'relative' class here
-
-  const linkContainer = "absolute bottom-3 right-3";
-  const imageContainer = "border-2 rounded-md h-[200px] relative"; // Add 'relative' class here
-
   return (
-    <div className={card}>
+    <div className="w-a h-a flex flex-col justify-start p-5 space-y-5 relative">
       <div className={`${styles.row} ${styles.smallTextTitle} font-bold`}>
-        <h2 className="whitespace-nowrap text-teal-300 text-md">{projectName}</h2>
+        <h2 className="whitespace-nowrap text-teal-300 text-md">
+          {projectName}
+        </h2>
         <hr className={styles.horizontalRuleRight}></hr>
       </div>
 
-      <div className={imageContainer}>
+      <div className="border-2 rounded-md h-[200px] relative">
         <img
           src={imgPath}
           className="z-10 h-full w-full object-cover" // Use object-cover to fit the image within the container
           alt="img"
         />
-        
+
         <div className="flex flex-row absolute bottom-3 right-3 space-x-5">
           <div>
             <a href={demoLink}>
-              <img src={`${demoIcon}` }  width="40px" height="40px" className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "></img>
+              <img
+                src={`${demoIcon}`}
+                width="40px"
+                height="40px"
+                className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
+              ></img>
             </a>
           </div>
 
           <div>
             <a href={repoLink}>
-              <img src={`${githubProfileIcon}` }  width="40px" height="40px" className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "></img>
+              <img
+                src={`${githubProfileIcon}`}
+                width="40px"
+                height="40px"
+                className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
+              ></img>
             </a>
           </div>
         </div>
-
       </div>
 
       <div

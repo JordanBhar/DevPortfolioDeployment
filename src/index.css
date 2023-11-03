@@ -4,35 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
 
-@keyframes moveAround {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(50px, 50px);
-  }
-  50% {
-    transform: translate(0, 100px);
-  }
-  75% {
-    transform: translate(-50px, 50px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
 .animate-move {
   animation: moveAround 10s infinite;
@@ -100,16 +72,7 @@
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-}
+
 
 @keyframes slide-top {
   0% {

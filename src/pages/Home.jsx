@@ -24,11 +24,12 @@ const Home = () => {
       <div className={`${styles.flexCenter} `}>
         <div className={styles.boxWidth}>
           <div className="flex flex-col md:flex-row space-y-5 md:space-y-10 md:space-x-40">
-      
-            <div className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}>
+            <div
+              className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}
+            >
               <div className="space-y-5">
-                <p className="text-2xl md:text-3xl font-bold text-white">
-                  Hello, My Name Is
+                <p className="text-2xl md:text-5xl font-bold text-white">
+                  About Me
                 </p>
                 <p className="text-2xl md:text-6xl font-bold text-white">
                   <span className="text-gradient">{aboutData[0].name}</span>
@@ -37,13 +38,14 @@ const Home = () => {
                   <span className="text-teal-400">{aboutData[0].job}</span>
                 </p>
               </div>
-              
+
               <p className={styles.regularText}>{aboutData[0].about}</p>
 
-              
-
               {contactData.map((data) => (
-                <ContactInfo  contactName={data.data} contactIcon={data.icon} ></ContactInfo>
+                <ContactInfo
+                  contactName={data.data}
+                  contactIcon={data.icon}
+                ></ContactInfo>
               ))}
 
               {/* Profile Img Mobile*/}
@@ -96,7 +98,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            
+
             {/* Profile Img Desktop*/}
             <div className="md:w-2/4 collapse md:visible flex justify-center items-center">
               <div className="flex-col">
@@ -107,7 +109,6 @@ const Home = () => {
                 />
               </div>
             </div>
-            
           </div>
         </div>
       </div>

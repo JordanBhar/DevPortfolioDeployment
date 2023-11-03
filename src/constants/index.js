@@ -173,19 +173,8 @@ export const projectData = [
       "A IOS application using Swift. This application uses Machine Learning (Speech Analysis), Gamification, Data Analytics, in order to Improve Non-English Speakers Fluency in English. This project was a group project with two other group members ",
   },
   {
-    id: 4,
-    projectName: "CatDog Application",
-    projectRepoLink: "https://github.com/JordanBhar/CatDogApplication",
-    projectDemoLink: "",
-    imgPth: "",
-    languages: "Java, HTML/CSS/JS , SpringBoot, thymeleaf",
-    tools: "InteliJ",
-    description:
-      "MVC web application for PROG20261, Using Spring boot / Java. A user database was implemented. Each user had a role of cat or dog and with these roles gave users access to different pages of a website",
-  },
-  {
     // i need to download and post as my own project so ppl can see the code
-    id: 5,
+    id: 4,
     projectName: "Movie Database",
     projectRepoLink:
       "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main",

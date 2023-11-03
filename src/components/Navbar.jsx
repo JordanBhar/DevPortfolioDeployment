@@ -39,7 +39,7 @@ const Navbar = ({ educationRef, projectsRef, contactRef }) => {
         <div className="justify-start flex items-center">
           <img
             src={logo}
-            className="h-[125px] w-[125px] xs:scale-75 p-[15px] ml-[10px]"
+            className="h-[125px] w-[125px] xs:scale-75 p-[15px] ml-[10px] mr-[100px] xs:mr-[125px] ss:mr-[180px] sm:mr-[375px] md:mr-[225px] lg:mr-[500px] xl:mr-[1175px]"
             alt="Logo"
           />
         </div>

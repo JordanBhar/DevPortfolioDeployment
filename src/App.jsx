@@ -34,21 +34,23 @@ const FloatingSpheres = ({ count }) => {
 
     const spheres = [];
     for (let i = 0; i < count; i++) {
-      const radius = Math.random() * 40 + 10;
+      const radius = Math.random() * 60 + 10;
       const x = Math.random() * window.innerWidth;
       const y = Math.random() * document.documentElement.scrollHeight;
 
       const sphere = Bodies.circle(x, y, radius, {
         render: {
           fillStyle: "teal",
-          strokeStyle: "teal",
-          lineWidth: 0,
+          strokeStyle: "white",
+          lineWidth: 5,
         },
       });
 
       spheres.push(sphere);
     }
 
+
+    
     World.add(engine.world, spheres);
     Engine.run(engine);
     Render.run(render);
@@ -57,8 +59,8 @@ const FloatingSpheres = ({ count }) => {
     setInterval(() => {
       spheres.forEach((sphere) => {
         const randomForce = {
-          x: (Math.random() - 0.5) * 0.005,
-          y: (Math.random() - 0.5) * 0.005,
+          x: (Math.random() - 0.5) * 0.001,
+          y: (Math.random() - 0.5) * 0.001,
         };
         Body.applyForce(
           sphere,
@@ -66,7 +68,7 @@ const FloatingSpheres = ({ count }) => {
           randomForce
         );
       });
-    }, 5000);
+    }, 100);
 
     return () => {
       Render.stop(render);
@@ -86,7 +88,7 @@ const FloatingSpheres = ({ count }) => {
 
 const BlurLayer = () => {
   return (
-    <div className="absolute top-0 left-0 w-full h-full backdrop-blur-md z-2"></div>
+    <div className="absolute top-0 left-0 w-full h-full backdrop-blur z-2"></div>
   );
 };
 
@@ -97,9 +99,11 @@ const App = () => {
         <FloatingSpheres count={100} />
         <BlurLayer />
         {/* rest of your components here */}
-        <div className={`w-full overflow-hidden h-a ${styles.flexStart} z-10`}>
+        <div className={`w-full overflow-hidden h-a  z-10`}>
           <div className="mx-auto relative">
-            <Navbar />
+            <div className={`${styles.flexCenter}`}>
+              <Navbar />
+            </div>
             <div className="space-y-40">
               <div id="Home" className="relative md:scale-90">
                 <Home />

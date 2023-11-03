@@ -37,24 +37,26 @@ const Home = () => {
                   <span className="text-teal-400">{aboutData[0].job}</span>
                 </p>
               </div>
+              
               <p className={styles.regularText}>{aboutData[0].about}</p>
+
               <div className="items-start space-y-5">
                 {contactData.map((contact) => (
                   <div className="flex gap-x-4" key={contact.data}>
                     <object
                       data={contact.icon}
-                      height="30"
-                      width="30"
+                      height="35"
+                      width="35"
                       className={styles.icons}
                     ></object>
-                    <p className={styles.regularText}>{contact.data}</p>
+                    <p className={`${styles.regularText}`}>{contact.data}</p>
                   </div>
                 ))}
               </div>
               <div className="md:hidden flex justify-center">
                 <img
                   src={profile}
-                  className={`${stylesHome.profileImg} shadow-2xl`}
+                  className={`${stylesHome.profileImg} shadow-2xl shadow-black`}
                   alt="Profile"
                 />
               </div>
@@ -102,7 +104,7 @@ const Home = () => {
               <div className="flex-col">
                 <img
                   src={profile}
-                  className={stylesHome.profileImg}
+                  className={`${stylesHome.profileImg}`}
                   alt="Profile"
                 />
               </div>

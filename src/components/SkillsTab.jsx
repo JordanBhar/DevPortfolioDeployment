@@ -71,7 +71,7 @@ const SkillsTab = () => {
                 </svg>
               </button>
 
-              <p className="text-white p:text-sm sm:text-xl">
+              <p className="text-white p:text-lg sm:text-xl">
                 {tabViewsSkillsEducation[selectedTab].title}
               </p>
 

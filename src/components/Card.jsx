@@ -21,7 +21,7 @@ function Card(props) {
   return (
     <div className={card}>
       <div className={`${styles.row} ${styles.smallTextTitle} font-bold`}>
-        <h2 className="whitespace-nowrap text-teal-300">{projectName}</h2>
+        <h2 className="whitespace-nowrap text-teal-300 text-md">{projectName}</h2>
         <hr className={styles.horizontalRuleRight}></hr>
       </div>
 

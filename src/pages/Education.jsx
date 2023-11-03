@@ -18,6 +18,7 @@ export const Education = () => {
             <p className="text-2xl md:text-4xl font-bold text-white mb-10">
               <span className="text-gradient">{EducationData.schoolName}</span>
             </p>
+            
             <div className="grid grid-cols-1 md:grid-cols-2">
               <div
                 className={`${styles.regularText} p:order-last p:mt-5 md:order-first`}

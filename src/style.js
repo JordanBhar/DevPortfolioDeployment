@@ -31,7 +31,7 @@ const styles = {
   smallText: "text-white text-base md:text-xs lg:text-sm",
   smallTextTitle: "text-white text-base md:text-xs lg:text-base",
   icons: "shadow-2xl ",
-  horizontalRuleRight: "ml-[30px] h-0.5 mt-2.5 w-full bg-white border-2",
+  horizontalRuleRight: "ml-[30px] h-0.5 mt-2.5 w-full bg-white border-1",
 };
 
 export const stylesHome = {

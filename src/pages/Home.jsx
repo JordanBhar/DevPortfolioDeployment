@@ -28,18 +28,15 @@ const Home = () => {
               className={` ${styles.containers} md:w-4/6 lg:w-4/8 space-y-5 md:space-y-10 shadow-2xl shadow-black p-10`}
             >
               <div className="space-y-5">
-                <p className="text-2xl md:text-5xl font-bold text-white">
-                  About Me
-                </p>
                 <p className="text-2xl md:text-6xl font-bold text-white">
-                  <span className="text-gradient">{aboutData[0].name}</span>
+                  {aboutData[0].name}
                 </p>
                 <p className="text-2xl md:text-3xl font-bold text-white">
                   <span className="text-teal-400">{aboutData[0].job}</span>
                 </p>
               </div>
 
-              <p className={styles.regularText}>{aboutData[0].about}</p>
+              <p className={`${styles.regularText} leading-relaxed `}>{aboutData[0].about}</p>
 
               {contactData.map((data) => (
                 <ContactInfo

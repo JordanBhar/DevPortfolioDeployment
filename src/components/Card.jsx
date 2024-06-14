@@ -16,7 +16,7 @@ function Card(props) {
   return (
     <div className="w-a h-a flex flex-col justify-start p-5 space-y-5 relative">
       <div className={`${styles.row} ${styles.smallTextTitle} font-bold`}>
-        <h2 className="whitespace-nowrap text-teal-300 text-md">
+        <h2 className="whitespace-nowrap text-teal-300 text-xl">
           {projectName}
         </h2>
         <hr className={styles.horizontalRuleRight}></hr>
@@ -54,18 +54,16 @@ function Card(props) {
         </div>
       </div>
 
-      <div
-        className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify`}
-      >
+      <div className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify text-lg`}>
         <p className="">
-          <span className="text-teal-300 text-md">Languages: </span>
+          <span className="text-teal-300 text-lg font-bold">Languages: </span>
           {projectLanguages}
         </p>
         <p className="">
-          <span className="text-teal-300  text-md">Tools: </span>
+          <span className="text-teal-300  text-lg font-bold">Tools: </span>
           {projectTools}
         </p>
-        <p className="mt-2">{projectDescription}</p>
+        <p className="text-base leading-relaxed">{projectDescription}</p>
       </div>
     </div>
   );

@@ -38,6 +38,7 @@ const SkillsTab = () => {
 
   return (
     <div>
+      {/* Laptops and Larger Screens Devices */}
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         {/* Show TabList on screens larger than small (sm) */}
         <TabList className="hidden md:flex pb-2 px-5 space-x-5 text-white flex flex-row items-center flex-wrap ">
@@ -46,11 +47,12 @@ const SkillsTab = () => {
               className="transition duration-700 ease-in-out hover:text-teal-300 "
               key={skills.id}
             >
-              <span className=" lg:text-xl xl:text-2xl">{skills.title}</span>
+              <span className=" lg:text-2xl xl:text-3xl font-bold">{skills.title}</span>
             </Tab>
           ))}
         </TabList>
-
+        
+        {/* Mobile Devices */}
         <div className="s:hidden flex flex-row justify-center items-center p-3 space-x-2 ">
           {screenWidth < 1024 ? (
             <>

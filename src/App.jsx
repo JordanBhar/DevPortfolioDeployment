@@ -14,7 +14,8 @@ const FloatingSpheres = ({ count }) => {
       Render = Matter.Render,
       World = Matter.World,
       Bodies = Matter.Bodies,
-      Body = Matter.Body;
+      Body = Matter.Body,
+      Events = Matter.Events;
 
     const engine = Engine.create();
 
@@ -39,6 +40,9 @@ const FloatingSpheres = ({ count }) => {
       const y = Math.random() * document.documentElement.scrollHeight;
 
       const sphere = Bodies.circle(x, y, radius, {
+        restitution: 1, // make the spheres bouncy
+        friction: 0.0001, // very low friction
+        frictionAir: 0.0001, // very low air resistance
         render: {
           fillStyle: "teal",
           strokeStyle: "white",
@@ -46,29 +50,36 @@ const FloatingSpheres = ({ count }) => {
         },
       });
 
+      // Give initial random velocity
+      Body.setVelocity(sphere, {
+        x: (Math.random() - 1.5) * 1,
+        y: (Math.random() - 0.5) * 1,
+      });
+
       spheres.push(sphere);
     }
 
-
-    
     World.add(engine.world, spheres);
-    Engine.run(engine);
+    Matter.Runner.run(engine);
     Render.run(render);
 
-    // Periodically apply random forces to the spheres
-    setInterval(() => {
+    // Detect collision with screen edges and keep spheres within bounds
+    Events.on(engine, "beforeUpdate", () => {
       spheres.forEach((sphere) => {
-        const randomForce = {
-          x: (Math.random() - 0.5) * 0.001,
-          y: (Math.random() - 0.5) * 0.001,
-        };
-        Body.applyForce(
-          sphere,
-          { x: sphere.position.x, y: sphere.position.y },
-          randomForce
-        );
+        const { position, velocity } = sphere;
+        const radius = sphere.circleRadius;
+
+        // Collision with left or right wall
+        if (position.x - radius <= 0 || position.x + radius >= window.innerWidth) {
+          Body.setVelocity(sphere, { x: -velocity.x, y: velocity.y });
+        }
+
+        // Collision with top or bottom wall
+        if (position.y - radius <= 0 || position.y + radius >= document.documentElement.scrollHeight) {
+          Body.setVelocity(sphere, { x: velocity.x, y: -velocity.y });
+        }
       });
-    }, 100);
+    });
 
     return () => {
       Render.stop(render);

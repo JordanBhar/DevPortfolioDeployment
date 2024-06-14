@@ -44,7 +44,7 @@
 }
 
 .bg-acrylic {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(24, 24, 27, 0.9);
 }
 
 .text-gradient {
@@ -60,7 +60,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
 }
 
 .box-shadow {

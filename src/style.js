@@ -1,6 +1,6 @@
 const styles = {
   boxWidth:
-    "xl:w-[2000px] lg:w-[1250px] md:w-[900px] sm:w-[560px] ss:w-[360px] xs:w-[280px] p:w-[220px] w-full self-center mx-auto",
+    "xl:w-[2000px] lg:w-[1550px] md:w-[900px] sm:w-[560px] ss:w-[360px] xs:w-[280px] p:w-[220px] w-full self-center mx-auto",
 
   //use this file later on to reduce the ammount of tailwind css classes declared in the components & pages and instead put styles in here so that the page looks cleaner
 

@@ -4,16 +4,13 @@ import Links from "../components/Links";
 import styles from "../style";
 const Footer = () => {
   return (
-    <footer className="bg-zinc-900 text-white mt-[300px] w-full pt-10 lg:px-32">
+    <footer className="bg-zinc-900 text-white mt-[250px] w-full  pt-10 lg:px-32">
       <div className="flex justify-center items-center ">
         <img
           src={logo}
-          className="h-[125px] w-[125px]  p-[15px] ml-[10px]"
+          className="h-[100px] w-[100px]  p-[15px] ml-[10px]"
           alt="Logo"
         />
-      </div>
-
-      <div className="flex-col  ">
         <p className=" text-sm md:text-lg text-center">
           Living, learning, & leveling up one day at a time.
         </p>

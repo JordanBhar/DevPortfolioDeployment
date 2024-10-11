@@ -14,7 +14,11 @@ import {
   Gympact,
   MovieDatabase,
   ShopTillYouDrop,
+  resume,
+  
 } from "../assets";
+
+
 
 export const navLinks = [
   {
@@ -43,7 +47,7 @@ export const aboutData = [
       "I'm a Mobile & Web applications developer with 5 years dedicated to perfecting Developer Experience. My applications stand out for their aesthetics, functionality, and intuitive user experiences. My commitment to continuous self-learning keeps me ahead in technological advances, ensuring my work is always at the cutting edge. Through my portfolio, you'll see my drive, the impact of my projects, and my passion for pushing mobile & web development boundaries. Let's collaborate and make your digital vision a reality!",
     github: "https://github.com/JordanBhar",
     //the resume should be a file path to an asset of my resume within this project
-    resume: "src/assets/Profile/Jordan_Resume_2023.pdf"
+    resume: resume
   },
 ];
 

@@ -30,7 +30,7 @@ const Navbar = ({ educationRef, projectsRef, contactRef }) => {
 
   // Apply the 'fixed-nav' class conditionally based on if the
   const navClass = isFixed
-    ? "fixed right-0 left-0 top-0 transition ease-in-out delay-150 bg-zinc-900 rounded-lg shadow-2xl"
+    ? "fixed right-0 left-0 top-0 transition ease-in-out delay-150 bg-zinc-900  shadow-2xl"
     : `bg-acrylic  rounded-lg shadow-2xl shadow-cyan-600/50 mt-[0px] mx-[0px] md:mt-[10px] ${styles.boxWidth}`;
 
   return (

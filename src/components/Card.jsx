@@ -30,31 +30,39 @@ function Card(props) {
         />
 
         <div className="flex flex-row absolute bottom-3 right-3 space-x-5">
-          <div>
-            <a href={demoLink}>
-              <img
-                src={`${demoIcon}`}
-                width="40px"
-                height="40px"
-                className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
-              ></img>
-            </a>
-          </div>
+          {demoLink && (
+            <div>
+              <a href={demoLink}>
+                <img
+                  src={`${demoIcon}`}
+                  width="40px"
+                  height="40px"
+                  className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
+                  alt="Demo Icon"
+                />
+              </a>
+            </div>
+          )}
 
-          <div>
-            <a href={repoLink}>
-              <img
-                src={`${githubProfileIcon}`}
-                width="40px"
-                height="40px"
-                className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
-              ></img>
-            </a>
-          </div>
+          {repoLink && (
+            <div>
+              <a href={repoLink}>
+                <img
+                  src={`${githubProfileIcon}`}
+                  width="40px"
+                  height="40px"
+                  className="bi bi-github bg-teal-300 rounded-full p-1 transition-transform transform ease-in-out duration-300 hover:scale-150 "
+                  alt="GitHub Repo"
+                />
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
-      <div className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify text-lg`}>
+      <div
+        className={`${styles.col} ${styles.smallText}  text-white space-y-3 text-left text-justify text-lg`}
+      >
         <p className="">
           <span className="text-teal-300 text-lg font-bold">Languages: </span>
           {projectLanguages}

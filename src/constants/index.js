@@ -39,7 +39,7 @@ export const aboutData = [
       "I'm a Mobile & Web applications developer with 5 years dedicated to perfecting Developer Experience. My applications stand out for their aesthetics, functionality, and intuitive user experiences. My commitment to continuous self-learning keeps me ahead in technological advances, ensuring my work is always at the cutting edge. Through my portfolio, you'll see my drive, the impact of my projects, and my passion for pushing mobile & web development boundaries. Let's collaborate and make your digital vision a reality!",
     github: "https://github.com/JordanBhar",
     //the resume should be a file path to an asset of my resume within this project
-    resume: "",
+    resume: "../src/assets/Profile/Jordan_Resume_2023.pdf",
   },
 ];
 
@@ -125,12 +125,12 @@ export const contactData = [
     icon: mailProfileIcon,
   },
   {
-    id: 3,
+    id: 4,
     data: "Jordan Bhar",
     icon: linkedinProfileIcon,
   },
   {
-    id: 4,
+    id: 5,
     data: "obsidiancobraa",
     icon: discordProfileIcon,
   },
@@ -142,7 +142,7 @@ export const projectData = [
     projectName: "Gympact",
     projectRepoLink: "https://github.com/JordanBhar/Gympact-FinalProject.git",
     projectDemoLink: "",
-    imgPth: "",
+    imgPth: "/src/assets/projectBG/Gympact.png",
     languages: "Swift & Swift UI",
     tools: "XCode, Firebase, APIs",
     description:
@@ -154,7 +154,7 @@ export const projectData = [
     projectName: "Shop Till You Drop",
     projectRepoLink: "https://github.com/TristarMMII/STYD",
     projectDemoLink: "",
-    imgPth: "",
+    imgPth: "/src/assets/projectBG/ShopTillYouDrop.png",
     languages: "Swift & Swift UI",
     tools: "XCode, Firebase, APIs",
     description:
@@ -166,7 +166,7 @@ export const projectData = [
     projectName: "Perfect Pronunciation",
     projectRepoLink: "https://github.com/ahmadmua/Perfect-Pronunciation",
     projectDemoLink: "",
-    imgPth: "",
+    imgPth: "/src/assets/projectBG/Alpaca-removebg-preview.png",
     languages: "Swift & Swift UI",
     tools: "XCode, Firebase, APIs, Machine Learning",
     description:
@@ -179,7 +179,7 @@ export const projectData = [
     projectRepoLink:
       "https://github.com/ahmadmua/PROG30000---Final-Project/tree/main",
     projectDemoLink: "",
-    imgPth: "",
+    imgPth: "/src/assets/projectBG/MovieDatabase.png",
     languages: "C#, .NET, HTML/CSS/JS",
     tools: "Visual Studio Code, Postman",
     description: "A Movie database application created with C# & .NET ",
@@ -188,25 +188,25 @@ export const projectData = [
 
 export const socialMediaLinks = [
   {
-    id: "social-media-1",
+    id: 1,
     icon: linkedinFooterIcon,
     link: "https://www.linkedin.com/in/jordan-bhar/?originalSubdomain=ca",
     name: "LinkedIn",
   },
   {
-    id: "social-media-2",
+    id: 2,
     icon: mailFooterIcon,
     link: "mailto:jordan.bhar@hotmail.com",
     name: "E-Mail",
   },
   {
-    id: "social-media-2",
+    id: 3,
     icon: discordFooterIcon,
     link: "https://discord.gg/KbTqQBJh9K",
     name: "Discord",
   },
   {
-    id: "social-media-4",
+    id: 4,
     icon: githubFooterIcon,
     link: "https://github.com/JordanBhar",
     name: "Github",

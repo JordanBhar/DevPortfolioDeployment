@@ -41,13 +41,13 @@ const SkillsTab = () => {
       {/* Laptops and Larger Screens Devices */}
       <Tabs selectedIndex={selectedTab} onSelect={handleTabSelect}>
         {/* Show TabList on screens larger than small (sm) */}
-        <TabList className="hidden md:flex pb-2 px-5 space-x-5 text-white flex flex-row items-center flex-wrap ">
+        <TabList className="hidden md:flex pb-2 px-5 space-x-10 text-white flex flex-row items-center flex-wrap ">
           {tabViewsSkillsEducation.map((skills) => (
             <Tab
               className="transition duration-700 ease-in-out hover:text-teal-300 "
               key={skills.id}
             >
-              <span className=" lg:text-2xl xl:text-3xl font-bold">{skills.title}</span>
+              <span className=" lg:text-2xl xl:text-3xl font-bold m-2 " >{skills.title}</span>
             </Tab>
           ))}
         </TabList>
@@ -59,8 +59,8 @@ const SkillsTab = () => {
               <button
                 type="button"
                 onClick={clickBackward}
-                className="rounded-full bg-teal-400 text-white py-2 px-4 mr-2"
-              >
+                className="rounded-full bg-teal-400 text-white py-2 px-4 ml-2 transition-transform duration-700 ease-out hover:text-teal-300 hover:bg-white hover:border-b-2 text-[20px] border-teal-300 transform hover:scale-110"
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -80,8 +80,8 @@ const SkillsTab = () => {
               <button
                 type="button"
                 onClick={clickForward}
-                className="rounded-full bg-teal-400 text-white py-2 px-4 ml-2"
-              >
+                className="rounded-full bg-teal-400 text-white py-2 px-4 ml-2 transition-transform duration-700 ease-out hover:text-teal-300 hover:bg-white hover:border-b-2 text-[20px] border-teal-300 transform hover:scale-110"
+                >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -102,7 +102,7 @@ const SkillsTab = () => {
             <TabPanel key={skills.id}>
               {selectedTab === index && (
                 <ul
-                  className={`${styles.row} flex-wrap justify-start gap-x-5 gap-y-5`}
+                  className={`${styles.row} flex-wrap justify-start gap-x-5 gap-y-5 rounded-full`}
                 >
                   {skills.skills &&
                     skills.skills.map((skill, skillIndex) => (

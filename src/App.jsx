@@ -107,7 +107,7 @@ const App = () => {
   return (
     <Router>
       <div className="relative bg-primary-gradient overflow-hidden font-poppins z-0">
-        <FloatingSpheres count={100} />
+        <FloatingSpheres count={35} />
         <BlurLayer />
         {/* rest of your components here */}
         <div className={`w-full overflow-hidden h-a  z-10`}>

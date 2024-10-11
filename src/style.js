@@ -27,7 +27,7 @@ const styles = {
   headerOneText: "text-3xl md:text-5xl font-bold",
   headerTwoText: "",
   importantText: "",
-  regularText: "text-white text-base  md:text-l lg:text-[20px]",
+  regularText: "text-white text-base  md:lg:text-[14px] lg:text-[16px]",
   smallText: "text-white text-base md:text-xs lg:text-sm",
   smallTextTitle: "text-white text-base md:text-xs lg:text-base",
   icons: "shadow-2xl ",

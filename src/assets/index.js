@@ -13,6 +13,10 @@ import resumeProfileIcon from "./Profile/resume.svg"
 import githubProfileIcon from "./Profile/github.svg"
 import demoIcon from "./Profile/google-play.svg"
 
+import PerfectPronunciation from "./projectBG/PerfectPronunciation.png"
+import Gympact from "./projectBG/Gympact.png"
+import ShopTillYouDrop from "./projectBG/ShopTillYouDrop.png"
+import MovieDatabase from "./projectBG/MovieDatabase.png"
 
 import githubFooterIcon from "../../src/assets/FooterIcons/githubb.svg"
 import discordFooterIcon from "../../src/assets/FooterIcons/discord.svg"
@@ -39,6 +43,11 @@ export {
   mailProfileIcon,
   githubProfileIcon,
   demoIcon,
+
+  PerfectPronunciation,
+  Gympact,
+  MovieDatabase,
+  ShopTillYouDrop,
 
   githubFooterIcon,
   discordFooterIcon,
